@@ -1,0 +1,1 @@
+select sum(valor_final) as acumulado, month(data_pedido) as mes from pedido where year(data_pedido) = 2021 group by month(data_pedido) order by month(data_pedido);
